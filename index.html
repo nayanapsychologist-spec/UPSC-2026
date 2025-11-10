@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nayana's Path to AIR 1 2026</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <style>
+      @media print {
+        .no-print {
+          display: none !important;
+        }
+        body * {
+          visibility: hidden;
+        }
+        #printable-area, #printable-area * {
+          visibility: visible;
+        }
+        #printable-area {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          margin: 0;
+          padding: 1.5rem;
+          border: none !important;
+          box-shadow: none !important;
+        }
+
+        /* Force light theme for printing */
+        html, body, #printable-area {
+          background-color: white !important;
+          color: black !important;
+        }
+        #printable-area *, #printable-area *:before, #printable-area *:after {
+          background-color: transparent !important;
+          color: black !important;
+          border-color: #ddd !important;
+          box-shadow: none !important;
+          text-shadow: none !important;
+        }
+        #printable-area a {
+          color: #0000ee !important;
+          text-decoration: underline !important;
+        }
+        /* Override Tailwind prose dark mode */
+        #printable-area .prose-invert {
+          color: black !important;
+          --tw-prose-body: black;
+          --tw-prose-headings: black;
+          --tw-prose-lead: black;
+          --tw-prose-links: #0000ee;
+          --tw-prose-bold: black;
+          --tw-prose-counters: black;
+          --tw-prose-bullets: black;
+          --tw-prose-hr: #ddd;
+          --tw-prose-quotes: black;
+          --tw-prose-quote-borders: #ddd;
+          --tw-prose-captions: #555;
+          --tw-prose-code: black;
+          --tw-prose-pre-code: black;
+          --tw-prose-pre-bg: #f5f5f5;
+          --tw-prose-th-borders: #ddd;
+          --tw-prose-td-borders: #ddd;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "marked": "https://aistudiocdn.com/marked@^17.0.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-100 dark:bg-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
