@@ -77,9 +77,11 @@
   }
 }
 </script>
+<!-- Add Babel Standalone for in-browser JSX/TSX transpilation -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
   <body class="bg-slate-100 dark:bg-slate-900">
     <div id="root"></div>
-    <script type="module" src="https://nayanapsychologist-spec.github.io/index.tsx"></script>
+    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
